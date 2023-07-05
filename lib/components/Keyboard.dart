@@ -3,7 +3,10 @@ import 'Buttons/Button.dart';
 import 'Buttons/ButtonRow.dart';
 
 class Keyboard extends StatelessWidget {
-  const Keyboard({super.key});
+
+  final void Function(String) cb;
+
+  const Keyboard({super.key, required this.cb});
 
   @override
   Widget build(BuildContext context) {
@@ -12,32 +15,32 @@ class Keyboard extends StatelessWidget {
       child: Column(
         children: [
           ButtonRow(buttons: [
-            Button.big(texto: 'AC'),
-            Button(texto: '%'),
-            Button.operation(texto: '/'),
+            Button.big(texto: 'AC', cor: Button.DARK, cb: cb),
+            Button(texto: '%', cor: Button.DARK, cb: cb),
+            Button.operation(texto: '/', cb: cb),
           ]),
           ButtonRow(buttons: [
-            Button(texto: '7'),
-            Button(texto: '8'),
-            Button(texto: '9'),
-            Button.operation(texto: 'X'),
+            Button(texto: '7', cb: cb),
+            Button(texto: '8', cb: cb),
+            Button(texto: '9', cb: cb),
+            Button.operation(texto: 'X', cb: cb),
           ]),
           ButtonRow(buttons: [
-            Button(texto: '4'),
-            Button(texto: '5'),
-            Button(texto: '6'),
-            Button.operation(texto: '-'),
+            Button(texto: '4', cb: cb),
+            Button(texto: '5', cb: cb),
+            Button(texto: '6', cb: cb),
+            Button.operation(texto: '-', cb: cb),
           ]),
           ButtonRow(buttons: [
-            Button(texto: '1'),
-            Button(texto: '2'),
-            Button(texto: '3'),
-            Button.operation(texto: '+'),
+            Button(texto: '1', cb: cb),
+            Button(texto: '2', cb: cb),
+            Button(texto: '3', cb: cb),
+            Button.operation(texto: '+', cb: cb),
           ]),
           ButtonRow(buttons: [
-            Button.big(texto: '0'),
-            Button(texto: '.'),
-            Button.operation(texto: '='),
+            Button.big(texto: '0', cb: cb),
+            Button(texto: '.', cb: cb),
+            Button.operation(texto: '=', cb: cb),
           ]),
         ]
       ),
