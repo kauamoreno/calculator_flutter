@@ -1,6 +1,6 @@
 <h1 align="center">Calculadora Flutter</h1>
 
-<img src="https://github.com/kauamoreno/calculator_flutter/assets/119445003/188f0a96-6394-4e76-8f6e-8b9099e7e7ed" align="left" width="300" height="430">
+<img src="https://github.com/kauamoreno/calculator_flutter/assets/119445003/5bcf1831-0a50-4326-8614-c6bb53c849b7" align="left" width="300" height="430">
 
 Este é um projeto de uma calculadora desenvolvida utilizando o framework Flutter. <br><br>
 A calculadora foi implementada com o objetivo de fornecer uma solução simples e funcional para realizar operações matemáticas básicas em dispositivos móveis.
